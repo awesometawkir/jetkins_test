@@ -2,7 +2,20 @@
 
 Simple **Maven + JDK 17 + Git** sample project for learning Jenkins CI/CD on ATOM.
 
-Local path: `~/projects/jetkins_test`
+Local path: `~/projects/jetkins_test`  
+Intended GitHub URL: https://github.com/awesometawkir/jetkins_test
+
+## Push to GitHub (one-time)
+
+Local CLI auth on this machine is expired. After you create an **empty** public repo named `jetkins_test` (no README) at https://github.com/new :
+
+```bash
+gh auth login -h github.com -p https -w
+cd ~/projects/jetkins_test
+git push -u origin main
+```
+
+Then use `https://github.com/awesometawkir/jetkins_test.git` as the Jenkins Git URL.
 
 ## What this project is
 
